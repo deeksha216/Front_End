@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title> My FeedBack Form </title>
+        <style>
+    body {
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    h1 {
+        color: darkblue;
+        text-align: center;
+    }
+
+    form {
+        width: 600px;
+        max-width: 90%;
+        margin: auto;
+        padding: 25px;
+
+        
+        background-color: rgba(255, 255, 255);
+        opacity: 0.7;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px gray;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    h4 {
+        color: rgb(7, 44, 100);
+    }
+
+    li {
+        margin: 8px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(46, 46, 116);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: blue;
+    }
+</style>
+
+        
+       
+    </head>
+    <body>
+        <h1 align="center">My FeedBack Form </h1>
+        </body>
+         <form  align="center">
+<div>
+        <b> Name:</b><input type="text" name="name"  maxlength="20" placeholder="enter your name"required><br>
+
+         <b>Email:</b><input type ="text" name="Email" placeholder="enter your email"> <br>
+         <b>Password:</b><input type="password" id="pass" name="pass" minlength="8" placeholder="enter your pasword"><br>
+         </div>
+         <br>
+
+         <div>
+            <h4> <b>Please check all the emotions that apply to you:</b></h4>
+            <ul">
+  <li>Angry<input type="checkbox" id="angry"> <label for="angry"></label></li>
+  <li>Sad<input type="checkbox" id="sad"> <label for="sad"></label></li>
+  <li>Happy<input type="checkbox" id="happy"> <label for="happy"></label></li>
+  <li>Ambivalent<input type="checkbox" id="ambivalent"> <label for="ambivalent"></label></li>
+</ul>
+ </div>
+ <div>
+    <h4> <b>How satisfied are you with our service?</b></h4>
+    <ul">
+  <li>Very Satisfied <input type="radio" name="satisfaction" value="very_satisfied"></li>
+  <li>Satisfied <input type="radio" name="satisfaction" value="satisfied"></li>
+  <li>Didn't Care <input type="radio" name="satisfaction" value="didnt_care"></li>
+  <li>Dissatisfied <input type="radio" name="satisfaction" value="dissatisfied"></li>
+  <li>Very Dissatisfied <input type="radio" name="satisfaction" value="very_dissatisfied"></li>
+  
+</ul>
+<b>Further Comments :</b><br><textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+
+ </div>
+ <div>
+<b> Bio Photo:</b><input type="file" name="bio photo" accept="gpg,png"><br> 
+<b>Location visited:</b>
+<select required>
+    <option value=""> Select Location </option>
+  <option value="bangalore">Bangalore</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="delhi">Delhi</option>
+  <option value="chennai">Chennai</option>
+  <option value="hyderabad">Hyderabad</option>
+</select>
+</div>
+<input type="submit">
+
+          </form>
+    
+   
+</html>
