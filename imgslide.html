@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>  TOURISM YOUR NEXT DESTINATION!! </h2>
+        <img id = "image" src="image.png">
+        <br><br>
+        <button onclick="previous()"> Previous</button>
+         <button onclick="next()"> Next</button>
+         <script>
+            let images=["imag1.png","img2.png","img3.png","img4.png","image5.png","image6.PNG"];
+            let i=0;
+            function next(){
+                i++;
+                if(i==images.length){
+                    i=0;
+                }
+                document.getElementById("image").src=images[i];
+            }
+            function previous(){
+                i--;
+                if (i<0){
+                    i= images.length -1;
+                }
+                document.getElementById("image"),src = images[i];
+            }
+            setInterval(next,3000);
+         </script>
+    </body>
+</html>
